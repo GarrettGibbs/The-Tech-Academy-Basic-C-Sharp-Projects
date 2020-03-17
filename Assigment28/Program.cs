@@ -13,6 +13,9 @@ namespace Assigment28
             Employee test1 = new Employee() { firstName = "Sample", lastName = "Student" };
             test1.SayName();
             Console.ReadLine();
+
+            IQuittable test2 = new Employee();
+            test2.Quit();
         }
     }
 }
