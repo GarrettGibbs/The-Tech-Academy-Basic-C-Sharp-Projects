@@ -8,6 +8,6 @@ namespace Assigment28
 {
     interface IQuittable
     {
-        void Quit();
+        //void Quit();
     }
 }
