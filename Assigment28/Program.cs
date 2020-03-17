@@ -10,12 +10,14 @@ namespace Assigment28
     {
         static void Main(string[] args)
         {
-            Employee test1 = new Employee() { firstName = "Sample", lastName = "Student" };
+            Employee test1 = new Employee() { firstName = "Sample", lastName = "Student", Id = 1 };
             test1.SayName();
+            Employee test2 = new Employee() { firstName = "Sample2", lastName = "Student", Id = 2 };
+            bool result = test1 == test2;
             Console.ReadLine();
 
-            IQuittable test2 = new Employee();
-            test2.Quit();
+            IQuittable test = new Employee();
+            test.Quit();
         }
     }
 }
