@@ -21,7 +21,7 @@ namespace CarInsuranceQuotes.Controllers
 
         public ActionResult Admin()
         {
-            using (CarInsuranceQuoteEntities2 db = new CarInsuranceQuoteEntities2())
+            using (CarInsuranceQuoteEntities3 db = new CarInsuranceQuoteEntities3())
             {
                 var quotes = db.Quotes;
                 var displayQuotes = new List<Quote>();
@@ -57,7 +57,7 @@ namespace CarInsuranceQuotes.Controllers
             if (data.HasHadDui == true) { monthlyRate = Convert.ToInt32(Convert.ToDouble(monthlyRate) * 1.25); };
             if (data.FullCoverage == true) { monthlyRate = Convert.ToInt32(Convert.ToDouble(monthlyRate) * 1.5); };
 
-            using (CarInsuranceQuoteEntities2 db = new CarInsuranceQuoteEntities2())
+            using (CarInsuranceQuoteEntities3 db = new CarInsuranceQuoteEntities3())
             {
                 Quote quote = new Quote();
                 quote.FirstName = data.FirstName;
